@@ -2,14 +2,14 @@
 A Python script that automatically updates your Discord Rich Presence based on the games you're playing. It detects when specific games are running on your computer and updates your Discord status accordingly.
 
 ## Table of Contents
-Features
-Prerequisites
-Installation
-Configuration
-Usage
-Running at Startup
-Troubleshooting
-License
+- [Features]
+- [Prerequisites]
+- [Installation]
+- [Configuration]
+- [Usage]
+- [Running at Startup]
+- [Troubleshooting]
+- [License]
 
 ## Features
 Automatic Game Detection: Detects when specified games are running.
