@@ -104,18 +104,29 @@ Press Win + S, type "Task Scheduler", and open it
   - Select "Run whether user is logged on or not."
   - Check "Run with highest privileges."
 #### 3. Set the Trigger
-
-Go to the Triggers tab.
-Click "New..." and select "At startup".
-Set the Action
-
-Go to the Actions tab.
-Click "New..." and select "Start a program."
-Program/script: wscript.exe
-Add arguments: "C:\path\to\run_script.vbs"
-Replace with the path to your VBS script.
-Finish Setup
-
-Adjust conditions and settings as needed.
-Save the task and enter your password if prompted.
-
+- Go to the **Triggers** tab.
+- Click "New..." and select "At startup".
+#### 4. Set the Action
+- Go to the Actions tab.
+- Click "New..." and select "Start a program."
+- Program/script: wscript.exe
+- Add arguments: "C:\path\to\run_script.vbs"
+  - Replace with the path to your VBS script.
+#### 5. Finish Setup
+- Adjust conditions and settings as needed.
+- Save the task and enter your password if prompted.
+## Troubleshooting
+- Game Not Detected
+  - Ensure the process_name matches the game's executable name exactly.
+  - Use Task Manager to verify the process name.
+- Discord Rich Presence Not Updating
+  - Check that your Discord applications are set up correctly.
+  - Verify that the Client IDs in the .env file are correct.
+- Script Doesn't Start at Boot
+  - Double-check that the VBS script is in the Startup folder.
+  - If using Task Scheduler, ensure the task is enabled and configured properly.
+- Errors in Script Execution
+  - Check the script.log file for error messages.
+  - Ensure all dependencies are installed.
+## License
+This project is licensed under the MIT License.
